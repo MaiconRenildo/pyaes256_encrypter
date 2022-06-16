@@ -1,4 +1,4 @@
-__version__ = '1.0.3'
+__version__ = '1.0.6'
 
 from pyaes256_encrypter.utils import generate_cipher,formate_text
 

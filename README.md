@@ -8,12 +8,16 @@ pip install pyaes256-encrypter
 
 ## Usage
 ~~~python
-  from aes256_encrypter import encode_text,decode_text
-  
-  text = 'hello world'                        # text to be encrypted
-  key = 'key'                                 # encryption key
-  
-  encoded = encode_text(text,key)             # 'Dx3dCTUSXzzM8wn1L/+NHVbyaDxZFpdqe+SN2NVZgfE='
-  decoded = decode_text(encoded,key)          # 'hello world'
-  
+from pyaes256_encrypter import encode_text, decode_text
+
+# text to be encrypted
+text = 'hello world'
+# encryption key
+key = 'key'
+
+
+# RANDOM ENCODED e.g. 'Dx3dCTUSXzzM8wn1L/+NHVbyaDxZFpdqe+SN2NVZgfE='
+encoded = encode_text(text, key)
+# 'hello world'
+decoded = decode_text(encoded, key)
 ~~~
